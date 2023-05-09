@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Encontrar Maior e Menor Número</title>
+</head>
+<body>
+  <script>
+    
+    function encontrarMaior(a, b) {
+      if (a > b) {
+        return a;
+      } else {
+        return b;
+      }
+    }
+
+    function encontrarMenor(a, b) {
+      if (a < b) {
+        return a;
+      } else {
+        return b;
+      }
+    }
+
+    var num1 = parseInt(prompt("Digite o primeiro número:"));
+    var num2 = parseInt(prompt("Digite o segundo número:"));
+
+    var maior = encontrarMaior(num1, num2);
+    var menor = encontrarMenor(num1, num2);
+
+    document.write("O maior número é: " + maior + "<br>");
+    document.write("O menor número é: " + menor + "<br>");
+
+  </script>
+</body>
+</html>
